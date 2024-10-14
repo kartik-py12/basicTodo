@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taskify</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container" >
+      <div class="todo">
+        <p style="font-weight: 600; font-size: 20px; margin-bottom:10px">To Do<p>
+        <div class="content_todo"><img src="https://user-images.githubusercontent.com/74038190/212747107-5b654ba5-31c6-4366-b42b-51b822e9bc52.gif" width="100%">
+        </div>
+        <div class="btn">
+            <div class="new_todo" onclick="toggleForm(`tform`)">Add new</div>
+            <div class="form hidden" id="tform">
+                <div class="title">TODO</div>
+                <div class="input-container ic1">
+                  <input id="title0" class="input" type="text" placeholder=" " />
+                  <div class="cut"></div>
+                  <label for="title0" class="placeholder">Title</label>
+                </div>
+                <div class="input-container ic2">
+                  <input id="description0" class="input" type="text" placeholder=" " />
+                  <div class="cut"></div>
+                  <label for="description0" class="placeholder">Description</label>
+                </div>
+                <div class="input-container ic2">
+                  <input id="tag0" class="input" type="text" placeholder=" " />
+                  <div class="cut cut-short"></div>
+                  <label for="tag0" class="placeholder">Tag </label>/>
+                </div>
+                <button type="text" class="submit" onclick="addTodo(`tform`,`content_todo`,`0`)">submit</button>
+              </div>
+        </div>
+      </div>
+
+
+
+      <div class="in_progress">
+        <p style="font-weight: 600; font-size: 20px; margin-bottom:10px">In Progress<p>
+        <div class="content_ip">
+            <img src="https://cultofthepartyparrot.com/parrots/hd/laptop_parrot.gif" width="50" height="55"/>
+            <img src="https://cultofthepartyparrot.com/parrots/hd/spinningparrot.gif" width="50" height="55"/>
+            <img src="https://cultofthepartyparrot.com/parrots/hd/levitationparrot.gif" width="50" height="55"/>
+            <img src="https://cultofthepartyparrot.com/parrots/hd/meldparrot.gif" width="50" height="55"/>
+            <img src="https://cultofthepartyparrot.com/parrots/hd/moonwalkingparrot.gif" width="50" height="55"/>
+            <img src="https://cultofthepartyparrot.com/parrots/hd/stableparrot.gif" width="50" height="55"/>
+            <img src="https://cultofthepartyparrot.com/parrots/hd/scienceparrot.gif" width="50" height="55"/>
+            <img src="https://cultofthepartyparrot.com/parrots/hd/laptop_parrot.gif" width="50" height="55"/>
+            <img src="https://cultofthepartyparrot.com/parrots/hd/spinningparrot.gif" width="50" height="55"/>
+        </div>
+        <div class="btn">
+            <div class="new_todo" onclick="toggleForm(`ipform`)">Add new</div>
+            <div class="form hidden" id="ipform">
+                <div class="title">TODO</div>
+                <div class="input-container ic1">
+                  <input id="title1" class="input" type="text" placeholder=" " />
+                  <div class="cut"></div>
+                  <label for="title1" class="placeholder">Title</label>
+                </div>
+                <div class="input-container ic2">
+                  <input id="description1" class="input" type="text" placeholder=" " />
+                  <div class="cut"></div>
+                  <label for="description1" class="placeholder">Description</label>
+                </div>
+                <div class="input-container ic2">
+                  <input id="tag1" class="input" type="text" placeholder=" " />
+                  <div class="cut cut-short"></div>
+                  <label for="tag1" class="placeholder">Tag </label>/>
+                </div>
+                <button type="text" class="submit" onclick="addTodo(`ipform`,`content_ip`,`1`)" id="ipform">submit</button>
+              </div>
+        </div>
+      </div>
+
+
+      <div class="under_review">
+        <p style="font-weight: 600; font-size: 20px; margin-bottom:10px">Under Review<p>
+        <div class="content_ur">
+
+            <img src="https://user-images.githubusercontent.com/74038190/212747107-5b654ba5-31c6-4366-b42b-51b822e9bc52.gif" width="100%">
+        </div>
+        <div class="btn">
+            <div class="new_todo" onclick="toggleForm(`urform`)">Add new</div>
+            <div class="form hidden" id="urform">
+                <div class="title">TODO</div>
+                <div class="input-container ic1">
+                  <input id="title2" class="input" type="text" placeholder=" " />
+                  <div class="cut"></div>
+                  <label for="title2" class="placeholder">Title</label>
+                </div>
+                <div class="input-container ic2">
+                  <input id="description2" class="input" type="text" placeholder=" " />
+                  <div class="cut"></div>
+                  <label for="description2" class="placeholder">Description</label>
+                </div>
+                <div class="input-container ic2">
+                  <input id="tag2" class="input" type="text" placeholder=" " />
+                  <div class="cut cut-short"></div>
+                  <label for="tag2" class="placeholder">Tag </label>/>
+                </div>
+                <button type="text" class="submit" onclick="addTodo(`urform`,`content_ur`,`2`)">submit</button>
+              </div>
+        </div>
+      </div>
+
+
+      <div class="finished">
+        <p style="font-weight: 600; font-size: 20px; margin-bottom:10px">Finished<p>
+        <div class="content_f">
+            <img src="https://cultofthepartyparrot.com/parrots/hd/laptop_parrot.gif" width="50" height="55"/>
+            <img src="https://cultofthepartyparrot.com/parrots/hd/spinningparrot.gif" width="50" height="55"/>
+            <img src="https://cultofthepartyparrot.com/parrots/hd/levitationparrot.gif" width="50" height="55"/>
+            <img src="https://cultofthepartyparrot.com/parrots/hd/meldparrot.gif" width="50" height="55"/>
+            <img src="https://cultofthepartyparrot.com/parrots/hd/moonwalkingparrot.gif" width="50" height="55"/>
+            <img src="https://cultofthepartyparrot.com/parrots/hd/stableparrot.gif" width="50" height="55"/>
+            <img src="https://cultofthepartyparrot.com/parrots/hd/scienceparrot.gif" width="50" height="55"/>
+            <img src="https://cultofthepartyparrot.com/parrots/hd/laptop_parrot.gif" width="50" height="55"/>
+            <img src="https://cultofthepartyparrot.com/parrots/hd/spinningparrot.gif" width="50" height="55"/>
+
+
+
+        </div>
+        <div class="btn">
+            <div class="new_todo" onclick="toggleForm(`fform`)">Add new</div>
+            <div class="form hidden" id="fform">
+                <div class="title">TODO</div>
+                <div class="input-container ic1">
+                  <input id="title3" class="input" type="text" placeholder=" " />
+                  <div class="cut"></div>
+                  <label for="title3" class="placeholder">Title</label>
+                </div>
+                <div class="input-container ic2">
+                  <input id="description3" class="input" type="text" placeholder=" " />
+                  <div class="cut"></div>
+                  <label for="description3" class="placeholder">Description</label>
+                </div>
+                <div class="input-container ic2">
+                  <input id="tag3" class="input" type="text" placeholder=" " />
+                  <div class="cut cut-short"></div>
+                  <label for="tag3" class="placeholder">Tag </label>/>
+                </div>
+                <button type="text" class="submit" onclick="addTodo(`fform`,`content_f`,`3`)" >submit</button>
+              </div>
+        </div>
+    </div> 
+
+  </body>
+  <script src="script.js"></script>
+
+</html>
